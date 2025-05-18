@@ -1,0 +1,567 @@
+/* =============================== */
+/*       Estilização Global        */
+/* =============================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* =============================== */
+/*  Seção de Boas-vindas e Banner  */
+/* =============================== */
+.tamanho-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-principal {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Container de Sobreposição no Banner */
+.logotipo-sobreposto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Se desejar um fundo levemente escurecido para legibilidade */
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* =============================== */
+/*         Navbar no Banner        */
+/* =============================== */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px; /* Ajuste o padding conforme necessário */
+  background-color: transparent; /* Fundo transparente */
+  margin-top: -20px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.technova-title {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  flex: 1; /* ocupa o espaço restante */
+  margin-left: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-items li {
+  margin-right: 20px;
+}
+
+.navbar-items li:last-child {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.navbar-items a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.btn_inscricao {
+  background-color: rgb(105, 105, 235);
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+/* =============================== */
+/*       Texto de Boas-vindas      */
+/* =============================== */
+.text_saudacao {
+  text-align: center;
+  color: #fff;
+  margin-top: -50px;
+}
+
+.text_saudacao h1 {
+  font-size: 48px;
+  margin-top: 50px;
+}
+
+.text_saudacao p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-descubra {
+  display: inline-block;
+  padding: 10px 20px;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+.btn-saibaMais {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(105, 105, 235);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+/* =============================== */
+/*         Seção Quem Somos        */
+/* =============================== */
+.sobreNos {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background: transparent;
+}
+
+.conteudo {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* espaçamento entre texto e imagem */
+}
+
+.sobreNosTexto {
+  width: 30%;
+  color: black;
+  text-align: justify;
+}
+
+.sobreNosTexto h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sobreNosTexto p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.sobreNosImagem {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start; /* aproxima a imagem do texto */
+}
+
+.sobreNosImagem img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* =============================== */
+/*         Seção de Destaques      */
+/* =============================== */
+.destaque {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.item-destaque {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 30%; /* Mantém equilíbrio entre elementos */
+}
+
+.icone {
+  width: 40px;
+  height: auto;
+}
+
+.icone-preto {
+  filter: invert(1);
+}
+
+.texto-destaque h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.texto-azul {
+  color: #007bff;
+}
+
+.texto-destaque p {
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* =============================== */
+/*     Seção Nossas Funcionalidades */
+/* =============================== */
+.funcionalities {
+  padding: 50px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.conteudo-funcionalidades {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textos-recursos {
+  width: 40%;
+  text-align: justify;
+}
+
+.itens-recursos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.textos-recursos p {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.textos-recursos h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.icone-pequeno {
+  align-self: center;
+  width: 20px;  /* Ícone pequeno */
+}
+
+.texto-negrito {
+  font-weight: bold;
+}
+
+.imagem-funcionalidades {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.imagem-funcionalidades img {
+  width: 100%;
+  max-width: 400px; /* Ajuste conforme necessário */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* =============================== */
+/*         Seção de Serviços       */
+/* =============================== */
+.container-servicos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.imagem-servicos {
+  width: 50%;
+}
+
+.imagem-servicos img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.conteudo-servicos {
+  width: 50%;
+  text-align: justify;
+}
+
+.item-servicos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.texto-servicos h3 {
+  margin-bottom: 5px;
+}
+
+.texto-serviços p {
+  line-height: 1.4;
+  text-align: justify;
+  margin: 0;
+}
+
+/* =============================== */
+/*            Newsletter           */
+/* =============================== */
+.noticias {
+  border: 1px solid #000;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 0;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.noticias h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.noticias h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.botoes-noticias {
+  margin-top: 15px;
+}
+
+.btn-cadastro {
+  display: inline-block;
+  padding: 10px 20px;
+  background: transparent;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.btn-conhecimento {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(105, 105, 235);
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.cta-btn:hover,
+.cta-btn2:hover {
+  background-color: orange;
+}
+
+footer::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+/* =============================== */
+/*          Media Queries          */
+/* =============================== */
+@media (max-width: 768px) {
+  /* Navbar: empilhar os elementos e ajustar os espaçamentos */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: -10px;
+  }
+  .nav-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .navbar-items {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-items li {
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+  .navbar-items li:last-child {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+
+  /* Boas-vindas / Banner */
+  .logotipo-sobreposto {
+    padding: 10px;
+  }
+
+  .text_saudacao {
+    text-align: center;
+    padding: 20px;
+    margin-top: -30px;
+  }
+  .text_saudacao h1 {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+  .text_saudacao p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .btn-descubra,
+  .btn-saibaMais {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    margin: 5px;
+  }
+
+  /* Seção Quem Somos */
+  .sobreNos {
+    padding: 30px 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .conteudo {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sobreNosTexto,
+  .sobreNosImagem {
+    width: 100%;
+  }
+  .sobreNosTexto h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .sobreNosTexto p {
+    font-size: 14px;
+  }
+  .sobreNosImagem img {
+    max-width: 100%;
+  }
+
+  /* Seção de Destaques */
+  .destaque {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  .item-destaque {
+    width: 100%;
+    justify-content: center;
+  }
+  .icone {
+    width: 30px;
+  }
+  .texto-destaque h4 {
+    font-size: 16px;
+  }
+  .texto-destaque p {
+    font-size: 14px;
+  }
+
+  /* Seção de Funcionalidades */
+  .funcionalities {
+    padding: 30px 20px;
+  }
+  .conteudo-funcionalidades {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .textos-recursos,
+  .imagem-funcionalidades {
+    width: 100%;
+  }
+  .textos-recursos h3 {
+    font-size: 16px;
+  }
+  .textos-recursos p {
+    font-size: 12px;
+  }
+  .imagem-funcionalidades img {
+    max-width: 100%;
+  }
+
+  /* Seção de Serviços */
+  .container-servicos {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .imagem-servicos,
+  .conteudo-servicos {
+    width: 100%;
+  }
+  .item-servicos {
+    justify-content: center;
+  }
+  .texto-servicos h3 {
+    font-size: 16px;
+  }
+  .texto-serviços p {
+    font-size: 14px;
+  }
+
+  /* Newsletter */
+  .noticias {
+    padding: 15px;
+    margin-top: 10px;
+  }
+  .noticias h1 {
+    font-size: 20px;
+  }
+  .noticias h3 {
+    font-size: 16px;
+  }
+  .botoes-noticias {
+    margin-top: 10px;
+  }
+  .btn-cadastro,
+  .btn-conhecimento {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
